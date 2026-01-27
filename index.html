@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile System // 01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: '#88b94b',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/tasa-explorer" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'TASA Explorer', sans-serif;
+            letter-spacing: 0.25em;
+            background-color: #f5f5f7;
+            background-image: radial-gradient(#ececed 0.6px, #f5f5f7 0.6px);
+            background-size: 24px 24px;
+            color: #1a1a1a;
+        }
+        .font-mono, .font-cousine {
+            font-family: 'DM Mono', monospace;
+            letter-spacing: -0.02em;
+        }
+        ::selection {
+            background: #88b94b;
+            color: white;
+        }
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d1d1d1;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a1a1a1;
+        }
+        .rams-border {
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        a {
+            transition: color 0.2s ease;
+        }
+        a:hover {
+            color: #88b94b !important;
+        }
+
+        .tracking-tighter { letter-spacing: 0.15em; }
+        .tracking-tight { letter-spacing: 0.2em; }
+        .tracking-normal { letter-spacing: 0.25em; }
+        .tracking-wide { letter-spacing: 0.3em; }
+        .tracking-wider { letter-spacing: 0.35em; }
+        .tracking-widest { letter-spacing: 0.45em; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="overflow-x-hidden">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
