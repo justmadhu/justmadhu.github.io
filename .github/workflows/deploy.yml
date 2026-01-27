@@ -41,6 +41,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist   # Vite's default build output
+          path: dist
 
   deploy:
     needs: build
