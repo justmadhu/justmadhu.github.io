@@ -40,7 +40,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist   # Vite's default build output
+          # If Vite outputs to "dist" (default), keep this.
+          # If the AI Studio project uses a different output dir, change it.
           path: dist
 
   deploy:
