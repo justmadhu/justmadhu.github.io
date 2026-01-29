@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { 
   PROFILE_INFO, 
@@ -42,6 +41,9 @@ const CompanyIcon: React.FC<{ item: CareerItem; className?: string }> = ({ item,
 const App: React.FC = () => {
   const [listeningData, setListeningData] = useState<Track[]>([]);
   const [readingData, setReadingData] = useState<Book[]>([]);
+  const [activeTravelIndex, setActiveTravelIndex] = useState(0);
+  const [activeTrackIndex, setActiveTrackIndex] = useState(0);
+  const [activeBookIndex, setActiveBookIndex] = useState(0);
 
   useEffect(() => {
     async function loadData() {
@@ -63,23 +65,70 @@ const App: React.FC = () => {
       <main className="relative max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-12 md:py-16">
         
         {/* Header / Hero */}
-        <header className="mb-16 md:mb-20 flex flex-col md:flex-row justify-between items-start gap-12">
-          {/* Title Block (Left) */}
-          <div className="flex-shrink-0">
-            <h1 className="text-5xl md:text-8xl font-bold font-mono tracking-tighter leading-[0.72] uppercase">
-              MADHU <br /> 
-              <span className="text-gray-300">MUTHU</span> <br /> 
-              <span className="text-gray-300">KUMAR</span>
-            </h1>
-            <div className="w-16 h-[2px] bg-accent mt-6"></div>
+        <header className="mb-16 md:mb-24">
+          <div className="grid grid-cols-1 lg:grid-cols-[min-content_1fr] gap-x-12 gap-y-0 items-start">
+            
+            {/* 
+              Responsive Ordering Strategy:
+              Small/Med (1 col): Names (1,2,3) -> Subtitles/Location (4,5,6)
+              Large+ (2 col): Interleaved (1-2, 3-4, 5-6)
+            */}
+
+            {/* Row 1: MADHU */}
+            <div className="order-1 lg:order-1 text-5xl md:text-8xl font-bold font-mono tracking-tighter uppercase leading-none text-black whitespace-nowrap self-start">
+              MADHU
+            </div>
+            
+            {/* Subtitle 1 */}
+            <div className="order-4 lg:order-2 lg:text-right lg:flex lg:justify-end self-start mt-10 lg:mt-0">
+              <p className="text-xl md:text-3xl text-black font-bold tracking-tight lg:max-w-xl leading-tight">
+                I help design and build products that hundreds of millions of people love.
+              </p>
+            </div>
+
+            {/* Row 2: MUTHU */}
+            <div className="order-2 lg:order-3 text-5xl md:text-8xl font-bold font-mono tracking-tighter uppercase leading-none text-gray-300 whitespace-nowrap self-start">
+              MUTHU
+            </div>
+            
+            {/* Subtitle 2 */}
+            <div className="order-5 lg:order-4 lg:text-right lg:flex lg:justify-end self-start mt-4 lg:mt-0">
+              <p className="text-xl md:text-3xl text-gray-300 font-light tracking-tight lg:max-w-xl leading-tight">
+                I believe everyday products deserve to be simple, usable and delightful.
+              </p>
+            </div>
+
+            {/* Row 3: KUMAR */}
+            <div className="order-3 lg:order-5 text-5xl md:text-8xl font-bold font-mono tracking-tighter uppercase leading-none text-gray-300 whitespace-nowrap self-end">
+              KUMAR
+            </div>
+            
+            {/* Location - Hidden on mobile/narrow windows (below lg breakpoint) */}
+            <div className="hidden lg:flex order-6 lg:order-6 lg:text-right lg:justify-end self-end lg:mt-0">
+              <div className="flex items-center gap-2 text-gray-400 opacity-60">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="12" 
+                  height="12" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span className="text-[10px] font-mono font-bold uppercase tracking-widest">
+                  {PROFILE_INFO.location}
+                </span>
+              </div>
+            </div>
           </div>
-          
-          {/* Bio / Subtitle Block (Right) */}
-          <div className="md:max-w-md md:text-right">
-            <p className="text-xl md:text-2xl text-gray-600 leading-tight font-light tracking-tight">
-              {PROFILE_INFO.bio}
-            </p>
-          </div>
+
+          {/* Accent line */}
+          <div className="w-16 h-[2px] bg-accent mt-12 lg:mt-12"></div>
         </header>
 
         {/* Working Section */}
@@ -141,24 +190,26 @@ const App: React.FC = () => {
         {/* Traveling */}
         <RamsSection title="Traveling">
           <div className="flex gap-6 md:gap-8 overflow-x-auto pb-4 no-scrollbar">
-            {TRAVEL_STATS.map((stat) => {
+            {TRAVEL_STATS.map((stat, index) => {
+              const isActive = activeTravelIndex === index;
               const dotSize = 'w-2.5 h-2.5';
               const gapSize = 'gap-[3px]';
               
               return (
                 <div 
                   key={stat.id} 
-                  className="group flex-shrink-0 w-[70vw] sm:w-[240px] lg:w-[210px] p-5 bg-white/40 backdrop-blur-sm rams-border space-y-5"
+                  onMouseEnter={() => setActiveTravelIndex(index)}
+                  className={`group flex-shrink-0 w-[70vw] sm:w-[240px] lg:w-[210px] p-5 backdrop-blur-sm rams-border space-y-5 transition-all duration-300 cursor-default ${isActive ? 'bg-white shadow-md' : 'bg-white/40'}`}
                 >
                   <div className="border-b border-gray-100 pb-3">
                     <h4 className="text-[10px] font-mono font-bold text-black uppercase tracking-widest leading-none mb-1.5">{stat.label}</h4>
-                    <div className="text-[11px] font-mono font-bold text-gray-400 leading-none">{stat.current} / {stat.total}</div>
+                    <div className="text-[11px] font-mono text-gray-400 leading-none">{stat.current} / {stat.total}</div>
                   </div>
                   <div className={`flex flex-wrap ${gapSize}`}>
                     {Array.from({ length: stat.total }).map((_, i) => (
                       <div 
                         key={i} 
-                        className={`${dotSize} rounded-none transition-colors duration-500 ${i < stat.current ? 'bg-black group-hover:bg-accent' : 'bg-gray-200'}`}
+                        className={`${dotSize} rounded-none transition-colors duration-500 ${i < stat.current ? (isActive ? 'bg-accent' : 'bg-black') : 'bg-gray-200'}`}
                       ></div>
                     ))}
                   </div>
@@ -172,25 +223,33 @@ const App: React.FC = () => {
         {listeningData.length > 0 && (
           <RamsSection title="Listening" seeMoreUrl="https://www.last.fm/user/justmadhu">
             <div className="flex gap-6 md:gap-8 overflow-x-auto pb-4 no-scrollbar">
-              {listeningData.map((track) => (
-                <a 
-                  key={track.id} 
-                  href={track.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="group cursor-pointer flex-shrink-0 w-32 md:w-44 block"
-                >
-                  <div className="relative aspect-square mb-3 bg-gray-200 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 rams-border shadow-sm">
-                    <img src={track.artUrl} alt={track.album} className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700" />
-                  </div>
-                  <h4 className="font-bold text-[11px] tracking-tight leading-tight group-hover:text-accent">
-                    {track.artist}
-                  </h4>
-                  <p className="text-[9px] text-gray-400 uppercase font-mono mt-1 leading-tight line-clamp-2">
-                    {track.title}
-                  </p>
-                </a>
-              ))}
+              {listeningData.map((track, index) => {
+                const isActive = activeTrackIndex === index;
+                return (
+                  <a 
+                    key={track.id} 
+                    href={track.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    onMouseEnter={() => setActiveTrackIndex(index)}
+                    className="group cursor-pointer flex-shrink-0 w-32 md:w-44 block"
+                  >
+                    <div className={`relative aspect-square mb-3 bg-gray-200 overflow-hidden transition-all duration-500 rams-border shadow-sm ${isActive ? 'grayscale-0' : 'grayscale'}`}>
+                      <img 
+                        src={track.artUrl} 
+                        alt={track.album} 
+                        className={`object-cover w-full h-full transform transition-transform duration-700 ${isActive ? 'scale-105' : 'scale-100'}`} 
+                      />
+                    </div>
+                    <h4 className={`font-bold text-[11px] tracking-tight leading-tight transition-colors ${isActive ? 'text-accent' : 'text-black'}`}>
+                      {track.artist}
+                    </h4>
+                    <p className="text-[9px] text-gray-400 uppercase font-mono mt-1 leading-tight line-clamp-2">
+                      {track.title}
+                    </p>
+                  </a>
+                );
+              })}
             </div>
           </RamsSection>
         )}
@@ -199,25 +258,33 @@ const App: React.FC = () => {
         {readingData.length > 0 && (
           <RamsSection title="Reading" seeMoreUrl="https://openlibrary.org/people/madhu_muthukumar/books/already-read">
             <div className="flex gap-6 md:gap-8 overflow-x-auto pb-4 no-scrollbar">
-              {readingData.map((book) => (
-                <a 
-                  key={book.id} 
-                  href={book.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group cursor-pointer flex-shrink-0 w-32 md:w-44 block"
-                >
-                  <div className="aspect-[2/3] mb-3 bg-gray-200 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 rams-border shadow-sm">
-                     <img src={book.coverUrl} alt={book.title} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                  </div>
-                  <h4 className="font-bold text-[11px] tracking-tight leading-tight group-hover:text-accent">
-                    {book.author}
-                  </h4>
-                  <p className="text-[9px] text-gray-400 uppercase font-mono mt-1 leading-tight line-clamp-2">
-                    {book.title}
-                  </p>
-                </a>
-              ))}
+              {readingData.map((book, index) => {
+                const isActive = activeBookIndex === index;
+                return (
+                  <a 
+                    key={book.id} 
+                    href={book.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onMouseEnter={() => setActiveBookIndex(index)}
+                    className="group cursor-pointer flex-shrink-0 w-32 md:w-44 block"
+                  >
+                    <div className={`aspect-[2/3] mb-3 bg-gray-200 overflow-hidden transition-all duration-500 rams-border shadow-sm ${isActive ? 'grayscale-0' : 'grayscale'}`}>
+                       <img 
+                        src={book.coverUrl} 
+                        alt={book.title} 
+                        className={`w-full h-full object-cover transform transition-transform duration-700 ${isActive ? 'scale-105' : 'scale-100'}`} 
+                       />
+                    </div>
+                    <h4 className={`font-bold text-[11px] tracking-tight leading-tight transition-colors ${isActive ? 'text-accent' : 'text-black'}`}>
+                      {book.author}
+                    </h4>
+                    <p className="text-[9px] text-gray-400 uppercase font-mono mt-1 leading-tight line-clamp-2">
+                      {book.title}
+                    </p>
+                  </a>
+                );
+              })}
             </div>
           </RamsSection>
         )}

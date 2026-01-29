@@ -5,7 +5,8 @@ import { ThinkingItem, Track, Book, TravelStat, CareerItem } from './types';
 export const PROFILE_INFO = {
   name: "MADHU MUTHUKUMAR",
   role: "Chief Product Officer at Chime",
-  bio: "I help design and build products trusted and loved by hundreds of millions of people. I’m drawn to the challenge of bringing world-class design to everyday products—where simplicity, usability, and craft matter most.",
+  location: "New York, NY",
+  bio: "I help design and build products loved by hundreds of millions of people.",
 };
 
 // --- API CONFIGURATION ---
@@ -13,27 +14,26 @@ export const OPENLIBRARY_USERNAME = 'madhu_muthukumar';
 // -------------------------
 
 export const CAREER_HISTORY: CareerItem[] = [
-  { id: 'h1', name: 'Chime', role: 'Chief Product Officer', year: 'PRESENT', icon: 'assets/icons/chime.svg' },
-  { id: 'h2', name: 'Notion', role: 'Chief Product Officer', year: 'PREV', icon: 'assets/icons/notion.png' },
-  { id: 'h3', name: 'Robinhood', role: 'VP / Head of Product', year: 'PREV', icon: 'assets/icons/robinhood.svg' },
+  { id: 'h1', name: 'Chime', role: 'CPO', year: 'PRESENT', icon: 'assets/icons/chime.png' },
+  { id: 'h2', name: 'Notion', role: 'CPO', year: 'PREV', icon: 'assets/icons/notion.png' },
+  { id: 'h3', name: 'Robinhood', role: 'VP / Head of Product', year: 'PREV', icon: 'assets/icons/robinhood.png' },
   { id: 'h4', name: 'Oculus', role: 'Director', year: 'PREV', icon: 'assets/icons/oculus.png' },
-  { id: 'h5', name: 'Twitter', role: 'Director', year: 'PREV', icon: 'assets/icons/twitter.svg' },
-  { id: 'h6', name: 'TechStars', role: 'Associate', year: 'PREV', icon: 'assets/icons/techstars.png' },
-  { id: 'h7', name: 'McKinsey & Company', role: 'Eng Mgr', year: 'PREV', icon: 'assets/icons/mckinsey.png' },
-  { id: 'h8', name: 'Penn Law', role: 'Juris Doctor', year: 'PREV', icon: 'assets/icons/pennlaw.png' },
-  { id: 'h9', name: 'Wharton School', role: 'Certificate of Business', year: 'PREV', icon: 'assets/icons/wharton.png' },
-  { id: 'h10', name: 'The College of NJ', role: 'Biology, Statistics', year: 'PREV', icon: 'assets/icons/tcnj.png' },
+  { id: 'h5', name: 'Twitter', role: 'Director', year: 'PREV', icon: 'assets/icons/twitter.png' },
+  { id: 'h6', name: 'McKinsey & Company', role: 'Eng Mgr', year: 'PREV', icon: 'assets/icons/mckinsey.png' },
+  { id: 'h7', name: 'Penn Law', role: 'Juris Doctor', year: 'PREV', icon: 'assets/icons/penn.png' },
+  { id: 'h8', name: 'Wharton School', role: 'Certificate of Business', year: 'PREV', icon: 'assets/icons/penn.png' },
+  { id: 'h9', name: 'The College of NJ', role: 'Biology, Statistics', year: 'PREV', icon: 'assets/icons/tcnj.png' },
 ];
 
 export const ADVISORY_HISTORY: CareerItem[] = [
   { id: 'a1', name: 'Decagon', role: 'Advisor', year: '2024', icon: 'assets/icons/decagon.png' },
-  { id: 'a2', name: 'WealthSimple', role: 'Advisor', year: '2023', icon: 'assets/icons/wealthsimple.png' },
-  { id: 'a3', name: 'Oak HC/FT', role: 'Advisor', year: '2023', icon: 'assets/icons/oakhcft.png' },
-  { id: 'a4', name: 'Acrew Capital', role: 'Advisor', year: '2022', icon: 'assets/icons/acrew.png' },
+  { id: 'a2', name: 'WealthSimple', role: 'Advisor', year: '2022', icon: 'assets/icons/wealthsimple.png' },
+  { id: 'a3', name: 'Oak HC/FT', role: 'Advisor', year: '2025', icon: 'assets/icons/oak.png' },
+  { id: 'a4', name: 'Acrew Capital', role: 'Advisor', year: '2025', icon: 'assets/icons/acrew.png' },
   { id: 'a5', name: 'Whatnot', role: 'Investor', year: '2022', icon: 'assets/icons/whatnot.png' },
-  { id: 'a6', name: 'Headway', role: 'Investor', year: '2021', icon: 'assets/icons/headway.png' },
-  { id: 'a7', name: 'CloudChef', role: 'Investor', year: '2021', icon: 'assets/icons/cloudchef.png' },
-  { id: 'a8', name: 'Various', role: 'Investor', year: '2021', icon: 'assets/icons/various.png' },
+  { id: 'a6', name: 'Headway', role: 'Investor', year: '2022', icon: 'assets/icons/headway.png' },
+  { id: 'a7', name: 'CloudChef', role: 'Investor', year: '2022', icon: 'assets/icons/cloudchef.png' },
+  { id: 'a8', name: 'Various', role: 'Investor', year: '2020', icon: 'assets/icons/various.png' },
 ];
 
 export const THINKING_ITEMS: ThinkingItem[] = [
@@ -91,5 +91,5 @@ export const TRAVEL_STATS: TravelStat[] = [
   { id: 's2', label: 'World Wonders', current: 7, total: 8 },
   { id: 's3', label: 'US National Parks', current: 32, total: 63 },
   { id: 's4', label: 'UNESCO 1M Sites', current: 42, total: 108 },
-  { id: 's5', label: 'Countries Visited', current: 41, total: 196 },
+  { id: 's5', label: 'Countries', current: 41, total: 196 },
 ];

@@ -1,3 +1,4 @@
+
 import { Book } from '../types';
 import { OPENLIBRARY_USERNAME } from '../constants';
 
@@ -16,14 +17,14 @@ export async function fetchBooks(): Promise<Book[]> {
     const data = await response.json();
     if (!data.reading_log_entries) return [];
 
-    // Sort by 'Date added' (logged_date) starting with the oldest first
+    // Sort by 'Date added' (logged_date) starting with the newest first
     const sortedEntries = data.reading_log_entries
       .sort((a: any, b: any) => {
         const dateA = a.logged_date ? new Date(a.logged_date).getTime() : 0;
         const dateB = b.logged_date ? new Date(b.logged_date).getTime() : 0;
-        return dateA - dateB; // Ascending order: oldest first
+        return dateB - dateA; // Descending order: newest first
       })
-      .slice(0, 10); // Display a selection of 10 items
+      .slice(0, 10); // Display the 10 most recent items
 
     // Map the sorted entries to our Book interface
     return sortedEntries.map((entry: any, index: number): Book => {
