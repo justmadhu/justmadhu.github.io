@@ -9,7 +9,7 @@ export const PROFILE_INFO = {
   bio: "I help design and build products loved by hundreds of millions of people.",
 };
 
-// PNG Data URIs for reliable rendering in static environments
+// Icon paths for career and advisory items
 const ICONS = {
   chime: "assets/icons/chime.png",
   notion: "assets/icons/notion.png",
@@ -39,32 +39,32 @@ export const CAREER_HISTORY: CareerItem[] = [
   { id: 'h4', name: 'Oculus', role: 'Director', year: 'PREV', icon: ICONS.oculus },
   { id: 'h5', name: 'Twitter', role: 'Director', year: 'PREV', icon: ICONS.twitter },
   { id: 'h6', name: 'McKinsey & Company', role: 'Eng Mgr', year: 'PREV', icon: ICONS.mckinsey },
-  { id: 'h7', name: 'Penn Law', role: 'Juris Doctor', year: 'PREV', icon: '' },
+  { id: 'h7', name: 'Penn Law', role: 'Juris Doctor', year: 'PREV', icon: ICONS.penn },
   { id: 'h8', name: 'Wharton School', role: 'Certificate of Business', year: 'PREV', icon: '' },
-  { id: 'h9', name: 'The College of NJ', role: 'Biology, Statistics', year: 'PREV', icon: '' },
+  { id: 'h9', name: 'The College of NJ', role: 'Biology, Statistics', year: 'PREV', icon: ICONS.tcnj },
 ];
 
 export const ADVISORY_HISTORY: CareerItem[] = [
-  { id: 'a1', name: 'Decagon', role: 'Advisor', year: '2024', icon: '' },
-  { id: 'a2', name: 'WealthSimple', role: 'Advisor', year: '2022', icon: '' },
-  { id: 'a3', name: 'Oak HC/FT', role: 'Advisor', year: '2025', icon: '' },
-  { id: 'a4', name: 'Acrew Capital', role: 'Advisor', year: '2025', icon: '' },
-  { id: 'a5', name: 'Whatnot', role: 'Investor', year: '2022', icon: '' },
-  { id: 'a6', name: 'Headway', role: 'Investor', year: '2022', icon: '' },
-  { id: 'a7', name: 'CloudChef', role: 'Investor', year: '2022', icon: '' },
+  { id: 'a1', name: 'Decagon', role: 'Advisor', year: '2024', icon: ICONS.decagon },
+  { id: 'a2', name: 'WealthSimple', role: 'Advisor', year: '2022', icon: ICONS.wealthsimple },
+  { id: 'a3', name: 'Oak HC/FT', role: 'Advisor', year: '2025', icon: ICONS.oak },
+  { id: 'a4', name: 'Acrew Capital', role: 'Advisor', year: '2025', icon: ICONS.acrew },
+  { id: 'a5', name: 'Whatnot', role: 'Investor', year: '2022', icon: ICONS.whatnot },
+  { id: 'a6', name: 'Headway', role: 'Investor', year: '2022', icon: ICONS.headway },
+  { id: 'a7', name: 'CloudChef', role: 'Investor', year: '2022', icon: ICONS.cloudchef },
   { id: 'a8', name: 'Various', role: 'Investor', year: '2020', icon: '' },
 ];
 
 export const THINKING_ITEMS: ThinkingItem[] = [
   {
     id: '1',
-    title: "Tincans and ChatGPT",
+    title: "The Ethics of Generative Interfaces",
     date: "2024.11.12",
     type: 'POST',
-    excerpt: "Avoiding risk and exploring space",
+    excerpt: "Exploring how we can maintain Dieter Rams' principles in the age of AI.",
     url: "#"
   },
-  /*{
+  {
     id: '2',
     title: "Future of Human-Machine Symbiosis",
     date: "2024.10.15",
@@ -87,7 +87,7 @@ export const THINKING_ITEMS: ThinkingItem[] = [
     type: 'POST',
     excerpt: "Why the feel of a physical knob matters more than ever.",
     url: "#"
-  }*/
+  }
 ];
 
 export const MUSIC_LIST: Track[] = [

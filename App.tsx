@@ -23,10 +23,7 @@ const CompanyIcon: React.FC<{ item: CareerItem; className?: string }> = ({ item,
           src={item.icon} 
           alt={item.name} 
           onError={() => {
-            // Only log if it's not a data URI (which should never fail)
-            if (!item.icon.startsWith('data:')) {
-              console.error(`Failed to load icon: ${item.icon}`);
-            }
+            console.error(`Failed to load icon: ${item.icon}`);
             setError(true);
           }}
           className="w-full h-full object-contain p-2.5"
