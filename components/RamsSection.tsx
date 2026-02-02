@@ -11,17 +11,14 @@ interface RamsSectionProps {
 const RamsSection: React.FC<RamsSectionProps> = ({ title, children, className = "", seeMoreUrl }) => {
   return (
     <section className={`mb-16 md:mb-20 ${className}`}>
-      <div className="flex items-center justify-between gap-4 mb-6">
-        <div className="flex items-center gap-4 flex-1">
-          <h2 className="text-[10px] font-bold tracking-[0.25em] uppercase text-gray-800 whitespace-nowrap">
-            {title}
-          </h2>
-          <div className="h-[1px] flex-1 bg-gray-200 opacity-60"></div>
-        </div>
+      <div className="flex items-end justify-between gap-4 mb-8">
+        <h2 className="text-[12px] font-bold tracking-[0.3em] uppercase text-black whitespace-nowrap leading-none">
+          {title}
+        </h2>
         {seeMoreUrl && (
           <a 
             href={seeMoreUrl} 
-            className="text-[9px] font-mono font-bold uppercase tracking-widest text-gray-400 hover:text-black transition-colors"
+            className="text-[11px] font-mono font-bold uppercase tracking-widest text-gray-500 hover:text-black transition-colors leading-none"
           >
             See More &gt;
           </a>

@@ -9,31 +9,41 @@ export const PROFILE_INFO = {
   bio: "I help design and build products loved by hundreds of millions of people.",
 };
 
+// SVG Data URIs for reliable rendering in static environments
+const ICONS = {
+  chime: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M16 4C9.37 4 4 9.37 4 16s5.37 12 12 12 12-5.37 12-12S22.63 4 16 4zm0 19c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z'/%3E%3C/svg%3E",
+  notion: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M8 6v20h16V6H8zm2 2h2v14l6-14h2v16h-2V10l-6 14h-2V8z'/%3E%3C/svg%3E",
+  robinhood: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M16 6l10 18H6L16 6zm0 4.5L9.5 22h13L16 10.5z'/%3E%3C/svg%3E",
+  oculus: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='none' stroke='white' stroke-width='3' d='M16 10c-5.52 0-10 2.68-10 6s4.48 6 10 6 10-2.68 10-6-4.48-6-10-6z'/%3E%3C/svg%3E",
+  twitter: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M24 6l-7.5 9L26 26h-5.2l-6.8-9.1L8.8 26H4l8.2-9.8L4 6h5.2l6.1 8.2L20.8 6H24z'/%3E%3C/svg%3E",
+  mckinsey: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='none' stroke='white' stroke-width='2.5' d='M8 10l8 12 8-12'/%3E%3C/svg%3E"
+};
+
 // --- API CONFIGURATION ---
 export const OPENLIBRARY_USERNAME = 'madhu_muthukumar'; 
 // -------------------------
 
 export const CAREER_HISTORY: CareerItem[] = [
-  { id: 'h1', name: 'Chime', role: 'CPO', year: 'PRESENT', icon: 'assets/icons/chime.png' },
-  { id: 'h2', name: 'Notion', role: 'CPO', year: 'PREV', icon: 'assets/icons/notion.png' },
-  { id: 'h3', name: 'Robinhood', role: 'VP / Head of Product', year: 'PREV', icon: 'assets/icons/robinhood.png' },
-  { id: 'h4', name: 'Oculus', role: 'Director', year: 'PREV', icon: 'assets/icons/oculus.png' },
-  { id: 'h5', name: 'Twitter', role: 'Director', year: 'PREV', icon: 'assets/icons/twitter.png' },
-  { id: 'h6', name: 'McKinsey & Company', role: 'Eng Mgr', year: 'PREV', icon: 'assets/icons/mckinsey.png' },
-  { id: 'h7', name: 'Penn Law', role: 'Juris Doctor', year: 'PREV', icon: 'assets/icons/penn.png' },
-  { id: 'h8', name: 'Wharton School', role: 'Certificate of Business', year: 'PREV', icon: 'assets/icons/penn.png' },
-  { id: 'h9', name: 'The College of NJ', role: 'Biology, Statistics', year: 'PREV', icon: 'assets/icons/tcnj.png' },
+  { id: 'h1', name: 'Chime', role: 'CPO', year: 'PRESENT', icon: ICONS.chime },
+  { id: 'h2', name: 'Notion', role: 'CPO', year: 'PREV', icon: ICONS.notion },
+  { id: 'h3', name: 'Robinhood', role: 'VP / Head of Product', year: 'PREV', icon: ICONS.robinhood },
+  { id: 'h4', name: 'Oculus', role: 'Director', year: 'PREV', icon: ICONS.oculus },
+  { id: 'h5', name: 'Twitter', role: 'Director', year: 'PREV', icon: ICONS.twitter },
+  { id: 'h6', name: 'McKinsey & Company', role: 'Eng Mgr', year: 'PREV', icon: ICONS.mckinsey },
+  { id: 'h7', name: 'Penn Law', role: 'Juris Doctor', year: 'PREV', icon: '' },
+  { id: 'h8', name: 'Wharton School', role: 'Certificate of Business', year: 'PREV', icon: '' },
+  { id: 'h9', name: 'The College of NJ', role: 'Biology, Statistics', year: 'PREV', icon: '' },
 ];
 
 export const ADVISORY_HISTORY: CareerItem[] = [
-  { id: 'a1', name: 'Decagon', role: 'Advisor', year: '2024', icon: 'assets/icons/decagon.png' },
-  { id: 'a2', name: 'WealthSimple', role: 'Advisor', year: '2022', icon: 'assets/icons/wealthsimple.png' },
-  { id: 'a3', name: 'Oak HC/FT', role: 'Advisor', year: '2025', icon: 'assets/icons/oak.png' },
-  { id: 'a4', name: 'Acrew Capital', role: 'Advisor', year: '2025', icon: 'assets/icons/acrew.png' },
-  { id: 'a5', name: 'Whatnot', role: 'Investor', year: '2022', icon: 'assets/icons/whatnot.png' },
-  { id: 'a6', name: 'Headway', role: 'Investor', year: '2022', icon: 'assets/icons/headway.png' },
-  { id: 'a7', name: 'CloudChef', role: 'Investor', year: '2022', icon: 'assets/icons/cloudchef.png' },
-  { id: 'a8', name: 'Various', role: 'Investor', year: '2020', icon: 'assets/icons/various.png' },
+  { id: 'a1', name: 'Decagon', role: 'Advisor', year: '2024', icon: '' },
+  { id: 'a2', name: 'WealthSimple', role: 'Advisor', year: '2022', icon: '' },
+  { id: 'a3', name: 'Oak HC/FT', role: 'Advisor', year: '2025', icon: '' },
+  { id: 'a4', name: 'Acrew Capital', role: 'Advisor', year: '2025', icon: '' },
+  { id: 'a5', name: 'Whatnot', role: 'Investor', year: '2022', icon: '' },
+  { id: 'a6', name: 'Headway', role: 'Investor', year: '2022', icon: '' },
+  { id: 'a7', name: 'CloudChef', role: 'Investor', year: '2022', icon: '' },
+  { id: 'a8', name: 'Various', role: 'Investor', year: '2020', icon: '' },
 ];
 
 export const THINKING_ITEMS: ThinkingItem[] = [
