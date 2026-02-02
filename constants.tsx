@@ -9,14 +9,23 @@ export const PROFILE_INFO = {
   bio: "I help design and build products loved by hundreds of millions of people.",
 };
 
-// SVG Data URIs for reliable rendering in static environments
+// PNG Data URIs for reliable rendering in static environments
 const ICONS = {
-  chime: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M16 4C9.37 4 4 9.37 4 16s5.37 12 12 12 12-5.37 12-12S22.63 4 16 4zm0 19c-3.86 0-7-3.14-7-7s3.14-7 7-7 7 3.14 7 7-3.14 7-7 7z'/%3E%3C/svg%3E",
-  notion: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M8 6v20h16V6H8zm2 2h2v14l6-14h2v16h-2V10l-6 14h-2V8z'/%3E%3C/svg%3E",
-  robinhood: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M16 6l10 18H6L16 6zm0 4.5L9.5 22h13L16 10.5z'/%3E%3C/svg%3E",
-  oculus: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='none' stroke='white' stroke-width='3' d='M16 10c-5.52 0-10 2.68-10 6s4.48 6 10 6 10-2.68 10-6-4.48-6-10-6z'/%3E%3C/svg%3E",
-  twitter: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='white' d='M24 6l-7.5 9L26 26h-5.2l-6.8-9.1L8.8 26H4l8.2-9.8L4 6h5.2l6.1 8.2L20.8 6H24z'/%3E%3C/svg%3E",
-  mckinsey: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='none' stroke='white' stroke-width='2.5' d='M8 10l8 12 8-12'/%3E%3C/svg%3E"
+  chime: "assets/icons/chime.png",
+  notion: "assets/icons/notion.png",
+  acrew: "assets/icons/acrew.png",
+  cloudchef: "assets/icons/cloudchef.png",
+  decagon: "assets/icons/decagon.png",
+  headway: "assets/icons/headway.png",
+  mckinsey: "assets/icons/mckinsey.png",
+  oak: "assets/icons/oak.png",
+  oculus: "assets/icons/oculus.png",
+  penn: "assets/icons/penn.png",
+  robinhood: "assets/icons/robinhood.png",
+  tcnj: "assets/icons/tcnj.png",
+  twitter: "assets/icons/twitter.png",
+  wealthsimple: "assets/icons/wealthsimple.png",
+  whatnot: "assets/icons/whatnot.png"
 };
 
 // --- API CONFIGURATION ---
@@ -49,13 +58,13 @@ export const ADVISORY_HISTORY: CareerItem[] = [
 export const THINKING_ITEMS: ThinkingItem[] = [
   {
     id: '1',
-    title: "The Ethics of Generative Interfaces",
+    title: "Tincans and ChatGPT",
     date: "2024.11.12",
     type: 'POST',
-    excerpt: "Exploring how we can maintain Dieter Rams' principles in the age of AI.",
+    excerpt: "Avoiding risk and exploring space",
     url: "#"
   },
-  {
+  /*{
     id: '2',
     title: "Future of Human-Machine Symbiosis",
     date: "2024.10.15",
@@ -78,7 +87,7 @@ export const THINKING_ITEMS: ThinkingItem[] = [
     type: 'POST',
     excerpt: "Why the feel of a physical knob matters more than ever.",
     url: "#"
-  }
+  }*/
 ];
 
 export const MUSIC_LIST: Track[] = [
