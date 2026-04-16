@@ -7,15 +7,6 @@ export interface CareerItem {
   icon: string; // Could be a simple SVG path or name
 }
 
-export interface ThinkingItem {
-  id: string;
-  title: string;
-  date: string;
-  type: 'POST' | 'VIDEO' | 'TALK' | 'PAPER';
-  excerpt: string;
-  url: string;
-}
-
 export interface Track {
   id: string;
   title: string;

@@ -1,8 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-import { 
-  PROFILE_INFO, 
-  THINKING_ITEMS, 
+import {
+  PROFILE_INFO,
   TRAVEL_STATS,
   CAREER_HISTORY,
   ADVISORY_HISTORY
@@ -157,32 +156,6 @@ const App: React.FC = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </RamsSection>
-
-        {/* Thinking */}
-        <RamsSection title="Thinking" seeMoreUrl="#">
-          <div className="grid gap-4">
-            {THINKING_ITEMS.map((item) => (
-              <a 
-                key={item.id} 
-                href={item.url} 
-                className="group block p-6 bg-white/40 backdrop-blur-sm rams-border hover:bg-white hover:shadow-md transition-all duration-300"
-              >
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-                  <div className="space-y-2">
-                    <div className="flex items-center gap-4">
-                      <span className="bg-accent/10 text-accent px-2 py-0.5 text-[11px] font-bold font-mono tracking-widest">{item.date}</span>
-                      <span className="font-mono text-[11px] text-gray-500 font-bold uppercase tracking-widest">{item.type}</span>
-                    </div>
-                    <h3 className="text-xl font-medium tracking-tight leading-none group-hover:text-accent transition-colors">{item.title}</h3>
-                  </div>
-                  <div className="flex items-center gap-4 text-[12px] font-mono uppercase tracking-widest text-gray-400 group-hover:text-accent">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover:translate-x-1 transition-transform rotate-[-45deg]"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                  </div>
-                </div>
-              </a>
-            ))}
           </div>
         </RamsSection>
 
