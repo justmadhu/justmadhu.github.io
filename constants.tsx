@@ -1,5 +1,5 @@
 
-import { ThinkingItem, Track, Book, TravelStat, CareerItem } from './types';
+import { Track, Book, TravelStat, CareerItem } from './types';
 
 // Profile Metadata
 export const PROFILE_INFO = {
@@ -55,41 +55,6 @@ export const ADVISORY_HISTORY: CareerItem[] = [
   { id: 'a8', name: 'Various', role: 'Investor', year: '2020', icon: '' },
 ];
 
-export const THINKING_ITEMS: ThinkingItem[] = [
-  {
-    id: '1',
-    title: "The Ethics of Generative Interfaces",
-    date: "2024.11.12",
-    type: 'POST',
-    excerpt: "Exploring how we can maintain Dieter Rams' principles in the age of AI.",
-    url: "#"
-  },
-  {
-    id: '2',
-    title: "Future of Human-Machine Symbiosis",
-    date: "2024.10.15",
-    type: 'TALK',
-    excerpt: "Keynote at DesignSystems 2024, London.",
-    url: "#"
-  },
-  {
-    id: '3',
-    title: "Synthesizing Reality",
-    date: "2024.09.05",
-    type: 'VIDEO',
-    excerpt: "A visual essay on the blurring lines between digital and physical.",
-    url: "#"
-  },
-  {
-    id: '4',
-    title: "Analogue Hardware in a Digital World",
-    date: "2024.08.21",
-    type: 'POST',
-    excerpt: "Why the feel of a physical knob matters more than ever.",
-    url: "#"
-  }
-];
-
 export const MUSIC_LIST: Track[] = [
   { id: 'm1', title: "Aura", artist: "Bicep", album: "Aura", artUrl: "https://picsum.photos/seed/m1/300/300", status: 'Current' },
   { id: 'm2', title: "Windowlicker", artist: "Aphex Twin", album: "Windowlicker", artUrl: "https://picsum.photos/seed/m2/300/300", status: 'Recent' },
@@ -107,8 +72,8 @@ export const BOOKS_READING: Book[] = [];
 
 export const TRAVEL_STATS: TravelStat[] = [
   { id: 's1', label: 'Continents', current: 6, total: 7 },
-  { id: 's2', label: 'World Wonders', current: 7, total: 8 },
-  { id: 's3', label: 'US National Parks', current: 32, total: 63 },
-  { id: 's4', label: 'UNESCO 1M Sites', current: 42, total: 108 },
+  { id: 's2', label: 'World Wonders', current: 8, total: 8 },
+  { id: 's3', label: 'US National Parks', current: 36, total: 63 },
+  { id: 's4', label: 'UNESCO 1M Sites', current: 43, total: 108 },
   { id: 's5', label: 'Countries', current: 41, total: 196 },
 ];
