@@ -5,24 +5,15 @@ interface RamsSectionProps {
   title: string;
   children: React.ReactNode;
   className?: string;
-  seeMoreUrl?: string;
 }
 
-const RamsSection: React.FC<RamsSectionProps> = ({ title, children, className = "", seeMoreUrl }) => {
+const RamsSection: React.FC<RamsSectionProps> = ({ title, children, className = "" }) => {
   return (
-    <section className={`mb-16 md:mb-20 ${className}`}>
-      <div className="flex items-end justify-between gap-4 mb-8">
-        <h2 className="text-[12px] font-bold tracking-[0.3em] uppercase text-black whitespace-nowrap leading-none">
+    <section className={`mb-12 md:mb-20 ${className}`}>
+      <div className="mb-8 border-b border-paper/20 pb-4">
+        <h2 className="text-xs md:text-sm font-mono font-medium tracking-[0.25em] uppercase text-paper/80 whitespace-nowrap leading-none">
           {title}
         </h2>
-        {seeMoreUrl && (
-          <a 
-            href={seeMoreUrl} 
-            className="text-[11px] font-mono font-bold uppercase tracking-widest text-gray-500 hover:text-black transition-colors leading-none"
-          >
-            See More &gt;
-          </a>
-        )}
       </div>
       <div>
         {children}

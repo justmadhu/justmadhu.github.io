@@ -44,7 +44,32 @@ export async function fetchBooks(): Promise<Book[]> {
       };
     });
   } catch (error) {
-    console.error('Open Library Shelf Error:', error);
-    return [];
+    console.warn('Open Library Shelf API not available. Using fallback data.');
+    return [
+      {
+        id: 'fb1',
+        title: 'The Design of Everyday Things',
+        author: 'Don Norman',
+        progress: 100,
+        coverUrl: 'https://picsum.photos/seed/fb1/300/450',
+        url: '#'
+      },
+      {
+        id: 'fb2',
+        title: 'Less and More: The Design Ethos of Dieter Rams',
+        author: 'Klaus Klemp',
+        progress: 100,
+        coverUrl: 'https://picsum.photos/seed/fb2/300/450',
+        url: '#'
+      },
+      {
+        id: 'fb3',
+        title: 'Thinking, Fast and Slow',
+        author: 'Daniel Kahneman',
+        progress: 100,
+        coverUrl: 'https://picsum.photos/seed/fb3/300/450',
+        url: '#'
+      }
+    ];
   }
 }
