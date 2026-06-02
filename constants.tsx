@@ -107,10 +107,10 @@ export const BOOKS_READING: Book[] = [];
 export const TRAVEL_STATS: TravelStat[] = [
   { id: 's1', label: 'of all continents', current: 6, total: 7 },
   { id: 's2', label: 'of the wonders of the world', current: 8, total: 8 },
-  { id: 's3', label: 'of all US states', current: 39, total: 50 },
-  { id: 's4', label: 'of all US national parks', current: 39, total: 63 },
-  { id: 's5', label: 'of all UNESCO 1M visitor sites', current: 43, total: 108 },
-  { id: 's6', label: 'of all countries', current: 41, total: 196 }
+  { id: 's3', label: 'of all US states', current: 40, total: 50 },
+  { id: 's4', label: 'of all US national parks', current: 37, total: 63 },
+  { id: 's5', label: 'of all UNESCO 1M visitor sites', current: 44, total: 108 },
+  { id: 's6', label: 'of all countries', current: 42, total: 196 }
 ];
 
 export interface TopListItem {
@@ -296,6 +296,17 @@ export const TOP_LISTS: TopListCategory[] = [
         description: 'This is a delicious and messy sandwich. Ask for it "juicy" at your own risk... and the hot giardiniera is hot.', 
         mapLink: 'https://maps.app.goo.gl/N9MvL7Yv9U7eP6X89' 
       }
+    ]
+  },
+  {
+    id: 'l10',
+    category: 'Lobster Roll',
+    items: [
+      { id: '1', rank: 1, title: 'McLoon\'s Lobster Shack', subtitle: 'South Thomaston, ME', description: 'The defining experience of what a great lobster roll and seaside shack should be.' },
+      { id: '2', rank: 2, title: 'Beal\'s Lobster Pier', subtitle: 'Southwest Harbor, ME', description: 'Garlic Lovah\'s Lobster Roll was outstanding full of slightly sweet lobster on a great Brioche roll.' },
+      { id: '3', rank: 3, title: 'Neptune Oyster Bar', subtitle: 'Boston, MA', description: 'Hot Roll, Cold Roll, who cares, it\'s all excellent.' },
+      { id: '4', rank: 4, title: 'Off The Hook', subtitle: 'Mystic, CT', description: 'Lobster Tempura with Scallions sounded like an unnecessary modern twist, but it was great.' },
+      { id: '5', rank: 5, title: 'James Hook Lobster Co', subtitle: 'Boston, MA', description: 'Hard to say anything negative. Good amount of lobster, good roll, easy to get to.' }
     ]
   },
 ];
