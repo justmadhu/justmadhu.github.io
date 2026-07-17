@@ -226,7 +226,7 @@ export const TOP_LISTS: TopListCategory[] = [
       { id: '1', rank: 1, title: 'Neptune Oyster Bar', subtitle: 'Boston, MA', description: 'Line out the door, and the cold lobster roll alone is worth it.', mapLink: 'https://maps.app.goo.gl/yXp9R2hH7uYvW5N88' },
       { id: '2', rank: 2, title: 'Cal Pep', subtitle: 'Barcelona, ES', description: 'Incredible counter service. Fresh catch from boat to griddle.', mapLink: 'https://maps.app.goo.gl/mX1m7S8B1qZ9V6Y7A' },
       { id: '3', rank: 3, title: 'Hog Island Oyster Co.', subtitle: 'Marshall, CA', description: 'Shuck your own oysters right on the edge of the bay.', mapLink: 'https://maps.app.goo.gl/pZ8vV9T6m5L1A7X9A' },
-      { id: '4', rank: 4, title: 'Pearl Oyster Bar', subtitle: 'West Village, New York, NY', description: 'Lobster rolls, fresh oysters and shoestring fries belong together.', mapLink: 'https://maps.app.goo.gl/9T7m2L5W8vX1S4Z9A' },
+      { id: '4', rank: 4, title: 'Blue Water Seafood Market & Grill', subtitle: 'San Diego, CA', description: 'Fresh caught fish turned into tacos, sashimi or whatever you want. No frills.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Blue+Water+Seafood+Market+%26+Grill%2C+San+Diego%2C+CA' },
       { id: '5', rank: 5, title: 'Seaworthy', subtitle: 'New Orleans, LA', description: 'Smallish place, with a good selection and attention to detail. Feels underhyped.', mapLink: 'https://maps.app.goo.gl/3Z8Vv6UvM9vXy5K8A' }
     ]
   },
