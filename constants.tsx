@@ -51,7 +51,6 @@ export const ADVISORY_HISTORY: CareerItem[] = [
   { id: 'a6', name: 'Whatnot', role: 'Investor', year: '2022', icon: ICONS.whatnot },
   { id: 'a7', name: 'Headway', role: 'Investor', year: '2022', icon: ICONS.headway },
   { id: 'a8', name: 'CloudChef', role: 'Investor', year: '2022', icon: ICONS.cloudchef },
-  { id: 'a9', name: 'Various', role: 'Investor', year: '2020', icon: '' },
 ];
 
 export const THINKING_ITEMS: ThinkingItem[] = [
