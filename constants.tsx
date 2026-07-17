@@ -275,10 +275,10 @@ export const TOP_LISTS: TopListCategory[] = [
       { 
         id: '3', 
         rank: 3, 
-        title: 'Parkway Bakery & Tavern', 
-        subtitle: 'New Orleans, LA', 
-        description: 'If you like a po\' boy, go there. If you want to like a po\' boy, go there.', 
-        mapLink: 'https://maps.app.goo.gl/w9uGzRj9R8v7fA8p9' 
+        title: 'Rowdy Rooster',
+        subtitle: 'New York, NY',
+        description: 'Nashville Hot Chicken meets Indian Pav (by the team behind Semma). This sandwich was made for me.',
+        mapLink: 'https://www.google.com/maps/search/?api=1&query=Rowdy+Rooster%2C+New+York%2C+NY'
       },
       { 
         id: '4', 
