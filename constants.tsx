@@ -302,11 +302,33 @@ export const TOP_LISTS: TopListCategory[] = [
     id: 'l10',
     category: 'Lobster Roll',
     items: [
-      { id: '1', rank: 1, title: 'McLoon\'s Lobster Shack', subtitle: 'South Thomaston, ME', description: 'The defining experience of what a great lobster roll and seaside shack should be.' },
-      { id: '2', rank: 2, title: 'Beal\'s Lobster Pier', subtitle: 'Southwest Harbor, ME', description: 'Garlic Lovah\'s Lobster Roll was outstanding full of slightly sweet lobster on a great Brioche roll.' },
-      { id: '3', rank: 3, title: 'Neptune Oyster Bar', subtitle: 'Boston, MA', description: 'Hot Roll, Cold Roll, who cares, it\'s all excellent.' },
-      { id: '4', rank: 4, title: 'Off The Hook', subtitle: 'Mystic, CT', description: 'Lobster Tempura with Scallions sounded like an unnecessary modern twist, but it was great.' },
-      { id: '5', rank: 5, title: 'James Hook Lobster Co', subtitle: 'Boston, MA', description: 'Hard to say anything negative. Good amount of lobster, good roll, easy to get to.' }
+      { id: '1', rank: 1, title: 'McLoon\'s Lobster Shack', subtitle: 'South Thomaston, ME', description: 'The defining experience of what a great lobster roll and seaside shack should be.', mapLink: 'https://www.google.com/maps/search/?api=1&query=McLoon%27s+Lobster+Shack%2C+South+Thomaston%2C+ME' },
+      { id: '2', rank: 2, title: 'Beal\'s Lobster Pier', subtitle: 'Southwest Harbor, ME', description: 'Garlic Lovah\'s Lobster Roll was outstanding full of slightly sweet lobster on a great Brioche roll.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Beal%27s+Lobster+Pier%2C+Southwest+Harbor%2C+ME' },
+      { id: '3', rank: 3, title: 'Neptune Oyster Bar', subtitle: 'Boston, MA', description: 'Hot Roll, Cold Roll, who cares, it\'s all excellent.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Neptune+Oyster%2C+Boston%2C+MA' },
+      { id: '4', rank: 4, title: 'Off The Hook', subtitle: 'Mystic, CT', description: 'Lobster Tempura with Scallions sounded like an unnecessary modern twist, but it was great.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Off+The+Hook+Raw+Bar+%26+Grill%2C+Mystic%2C+CT' },
+      { id: '5', rank: 5, title: 'James Hook Lobster Co', subtitle: 'Boston, MA', description: 'Hard to say anything negative. Good amount of lobster, good roll, easy to get to.', mapLink: 'https://www.google.com/maps/search/?api=1&query=James+Hook+%26+Co%2C+Boston%2C+MA' }
+    ]
+  },
+  {
+    id: 'l11',
+    category: 'Wings',
+    items: [
+      { id: '1', rank: 1, title: 'Bar-Bill', subtitle: 'Buffalo, NY', description: 'Perfection. Crisp, hot and served with no frills.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Bar-Bill+Tavern%2C+Buffalo%2C+NY' },
+      { id: '2', rank: 2, title: 'San Tung', subtitle: 'San Francisco, CA', description: 'Borderline addictive wings with the right mix of sweet and spicy.', mapLink: 'https://www.google.com/maps/search/?api=1&query=San+Tung%2C+San+Francisco%2C+CA' },
+      { id: '3', rank: 3, title: 'Elmo\'s', subtitle: 'Buffalo, NY', description: 'Fried, Sauced, Grilled, Sauced; Hot + BBQ was outstanding.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Elmo%27s%2C+Buffalo%2C+NY' },
+      { id: '4', rank: 4, title: 'Hattie B\'s', subtitle: 'Nashville, TN', description: 'Yes, this is just "Hot Chicken" in wing form. Yes, it\'s also delicious.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Hattie+B%27s+Hot+Chicken%2C+Nashville%2C+TN' },
+      { id: '5', rank: 5, title: 'Kin Khao', subtitle: 'San Francisco, CA', description: 'Thai-style wings with a Michelin star and a ton of umami.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Kin+Khao%2C+San+Francisco%2C+CA' }
+    ]
+  },
+  {
+    id: 'l12',
+    category: 'Baked Goods',
+    items: [
+      { id: '1', rank: 1, title: 'Sankt Peders Bageri', subtitle: 'Copenhagen, DK', description: 'Life changing cardamom buns from the oldest bakery in Copenhagen.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Sankt+Peders+Bageri%2C+Copenhagen%2C+DK' },
+      { id: '2', rank: 2, title: 'Ringo', subtitle: 'Tokyo, JP', description: 'Japanese craftsmanship applied to an apple turnover with custard.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Ringo%2C+Tokyo%2C+JP' },
+      { id: '3', rank: 3, title: 'Pierre Hermé', subtitle: 'Paris, FR', description: 'Small, delectable macarons with seasonal flavors from a former Ladurée chef.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Pierre+Herm%C3%A9%2C+Paris%2C+FR' },
+      { id: '4', rank: 4, title: 'Dominique Ansel Bakery', subtitle: 'New York, NY', description: 'Come for the cronuts, stay for the ganaches and tarts.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Dominique+Ansel+Bakery%2C+New+York%2C+NY' },
+      { id: '5', rank: 5, title: 'B Patisserie', subtitle: 'San Francisco, CA', description: 'Just get the Kouign Amann. It\'s incredible.', mapLink: 'https://www.google.com/maps/search/?api=1&query=B+Patisserie%2C+San+Francisco%2C+CA' }
     ]
   },
 ];
