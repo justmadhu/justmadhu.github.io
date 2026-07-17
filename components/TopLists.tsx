@@ -49,16 +49,20 @@ export const TopLists: React.FC = () => {
                               </a>
                               
                               {/* Map Preview Hover Card */}
-                              <div className="absolute right-full top-0 mr-3 md:top-1/2 md:-translate-y-1/2 w-[200px] h-[150px] sm:w-[240px] sm:h-[180px] bg-paper p-1 rounded-sm shadow-2xl opacity-0 invisible group-hover/map:opacity-100 group-hover/map:visible transition-all duration-300 z-50 origin-right border border-bg/10">
-                                <iframe 
-                                  width="100%" 
-                                  height="100%" 
-                                  frameBorder="0" 
-                                  src={`https://maps.google.com/maps?q=${encodeURIComponent(item.title + ', ' + item.subtitle)}&t=&z=14&ie=UTF8&iwloc=&output=embed`}
-                                  className="rounded-[2px] grayscale-[0.5] contrast-125 opacity-80 transition-all duration-500 group-hover/map:grayscale-0 group-hover/map:opacity-100 pointer-events-none"
-                                />
+                              <div className="absolute right-full top-0 mr-3 md:top-1/2 md:-translate-y-1/2 w-[200px] h-[150px] sm:w-[240px] sm:h-[180px] bg-paper p-1 rounded-[4px] shadow-2xl opacity-0 invisible group-hover/map:opacity-100 group-hover/map:visible transition-all duration-300 z-50 origin-right border border-bg/20 ring-1 ring-bg/5">
+                                <div className="relative w-full h-full overflow-hidden rounded-[2px]">
+                                  <iframe
+                                    width="100%"
+                                    height="100%"
+                                    frameBorder="0"
+                                    src={`https://maps.google.com/maps?q=${encodeURIComponent(item.title + ', ' + item.subtitle)}&t=&z=10&ie=UTF8&iwloc=&output=embed`}
+                                    className="w-full h-full saturate-[0.85] brightness-[1.03] contrast-[0.93] pointer-events-none"
+                                  />
+                                  {/* Inner vignette for depth */}
+                                  <div className="absolute inset-0 pointer-events-none rounded-[2px] shadow-[inset_0_0_14px_rgba(26,26,26,0.2)]"></div>
+                                </div>
                                 {/* Small triangle arrow at the right to point to the icon */}
-                                <div className="absolute top-1.5 md:top-1/2 md:-translate-y-1/2 -right-1.5 w-3 h-3 bg-paper rotate-45 border-t border-r border-bg/10"></div>
+                                <div className="absolute top-1.5 md:top-1/2 md:-translate-y-1/2 -right-1.5 w-3 h-3 bg-paper rotate-45 border-t border-r border-bg/20"></div>
                               </div>
                             </div>
                           ) : (
