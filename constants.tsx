@@ -220,7 +220,7 @@ export const TOP_LISTS: TopListCategory[] = [
   },
   {
     id: 'l6',
-    category: 'Raw bar',
+    category: 'Raw Bar',
     items: [
       { id: '1', rank: 1, title: 'Neptune Oyster Bar', subtitle: 'Boston, MA', description: 'Line out the door, and the cold lobster roll alone is worth it.', mapLink: 'https://maps.app.goo.gl/yXp9R2hH7uYvW5N88' },
       { id: '2', rank: 2, title: 'Cal Pep', subtitle: 'Barcelona, ES', description: 'Incredible counter service. Fresh catch from boat to griddle.', mapLink: 'https://maps.app.goo.gl/mX1m7S8B1qZ9V6Y7A' },
@@ -231,13 +231,24 @@ export const TOP_LISTS: TopListCategory[] = [
   },
   {
     id: 'l7',
-    category: 'BBQ',
+    category: 'Ribs',
     items: [
-      { id: '1', rank: 1, title: 'Joe\'s Kansas City B-B-Q', subtitle: 'Kansas City, MO', description: 'The Z-Man sandwich and ribs are astounding.', mapLink: 'https://maps.app.goo.gl/yXp9R2hH7uYvW5N88' },
-      { id: '2', rank: 2, title: 'Peg Leg Porker', subtitle: 'Nashville, TN', description: 'Chicken, ribs and the best spicy barbeque sauce I\'ve ever had.', mapLink: 'https://maps.app.goo.gl/mX1m7S8B1qZ9V6Y7A' },
-      { id: '3', rank: 3, title: 'Bogart\'s Smokehouse', subtitle: 'St. Louis, MO', description: 'If you like a saucy rib, you\'ll love this place.', mapLink: 'https://maps.app.goo.gl/pZ8vV9T6m5L1A7X9A' },
-      { id: '4', rank: 4, title: 'Central BBQ', subtitle: 'Memphis, TN', description: 'The best dry rub. Sad that I tried other places in town.', mapLink: 'https://maps.app.goo.gl/9T7m2L5W8vX1S4Z9A' },
-      { id: '5', rank: 5, title: 'Brantley Creek Barbecue', subtitle: 'Odessa, TX', description: 'Family outdoor setting with incredible brisket. Make a day of it.', mapLink: 'https://maps.app.goo.gl/3Z8Vv6UvM9vXy5K8A' }
+      { id: '1', rank: 1, title: 'Peg Leg Porker', subtitle: 'Nashville, TN', description: 'Dry rubbed ribs made to perfection, with an incredible hot bbq sauce on the side.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Peg+Leg+Porker%2C+903+Gleaves+St%2C+Nashville%2C+TN+37203' },
+      { id: '2', rank: 2, title: 'Southern Junction Barbecue', subtitle: 'Buffalo, NY', description: 'Fall off the bone ribs with a subtle cardamom influence.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Southern+Junction+Barbecue%2C+365+Connecticut+St%2C+Buffalo%2C+NY+14213' },
+      { id: '3', rank: 3, title: 'Bogart\'s Smokehouse', subtitle: 'St. Louis, MO', description: 'Saucy, meaty ribs made to be enjoyed with a beer. Outstanding.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Bogart%27s+Smokehouse%2C+1627+S+9th+St%2C+St.+Louis%2C+MO+63104' },
+      { id: '4', rank: 4, title: 'Brantley Creek Barbecue', subtitle: 'Odessa, TX', description: 'Fun outdoor family atmosphere anchored by incredible counter service ribs.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Brantley+Creek+Barbecue%2C+3541+Faudree+Rd%2C+Odessa%2C+TX+79765' },
+      { id: '5', rank: 5, title: 'Central BBQ', subtitle: 'Memphis, TN', description: 'Any way you want \'em, Central will make \'em. Wet and Dry were excellent.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Central+BBQ%2C+2249+Central+Ave%2C+Memphis%2C+TN+38104' }
+    ]
+  },
+  {
+    id: 'l13',
+    category: 'Brisket',
+    items: [
+      { id: '1', rank: 1, title: 'Joe\'s Kansas City Bar-B-Que', subtitle: 'Kansas City, KS', description: 'Just outstanding on its own or in a ZMan. This is the gold standard.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Joe%27s+Kansas+City+Bar-B-Que%2C+3002+W+47th+Ave%2C+Kansas+City%2C+KS+66103' },
+      { id: '2', rank: 2, title: 'Convenience West', subtitle: 'Marfa, TX', description: 'James Beard award winning gas station BBQ in an art oasis — in Texas.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Convenience+West%2C+1411+W+San+Antonio+St%2C+Marfa%2C+TX+79843' },
+      { id: '3', rank: 3, title: 'Slap\'s BBQ', subtitle: 'Kansas City, KS', description: 'Just the best burnt ends ever. Thick, juicy nuggets of goodness.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Slap%27s+BBQ%2C+553+Central+Ave%2C+Kansas+City%2C+KS+66101' },
+      { id: '4', rank: 4, title: 'Southern Junction Barbecue', subtitle: 'Buffalo, NY', description: 'Classic smoking with Kerala spices on the brisket and flatiron. Genius.', mapLink: 'https://www.google.com/maps/search/?api=1&query=Southern+Junction+Barbecue%2C+365+Connecticut+St%2C+Buffalo%2C+NY+14213' },
+      { id: '5', rank: 5, title: 'City Limits Barbeque', subtitle: 'West Columbia, SC', description: 'Simple, smoky, classic brisket that would feel at home in Texas.', mapLink: 'https://www.google.com/maps/search/?api=1&query=City+Limits+Barbeque%2C+1119+Methodist+Park+Rd%2C+West+Columbia%2C+SC+29170' }
     ]
   },
   {
