@@ -11,7 +11,7 @@ export const TopLists: React.FC = () => {
   }, []);
 
   return (
-    <RamsSection title="I love these places for the..." className="relative z-10 w-full shrink-0 min-w-0">
+    <RamsSection title="I love these places for their..." className="relative z-10 w-full shrink-0 min-w-0">
       <div className="flex gap-4 md:gap-8 pb-12 pt-4 min-h-[440px] sm:min-h-[480px] overflow-x-auto overflow-y-hidden min-w-0 no-scrollbar -mr-6 sm:-mr-8 lg:-mr-16 pr-6 sm:pr-8 lg:pr-16 w-[calc(100%+1.5rem)] sm:w-[calc(100%+2rem)] lg:w-[calc(100%+4rem)] snap-x relative z-10 items-start">
         {shuffledLists.map((list, listIndex) => (
           <div 

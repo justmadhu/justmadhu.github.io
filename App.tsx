@@ -200,7 +200,7 @@ const App: React.FC = () => {
         </RamsSection>
 
         {/* Traveling */}
-        <RamsSection title="I've been to..." className="relative z-10">
+        <RamsSection title="I've traveled to..." className="relative z-10">
           <div className="flex gap-4 md:gap-12 overflow-x-auto pb-6 no-scrollbar -mr-6 sm:-mr-8 lg:-mr-16 pr-6 sm:pr-8 lg:pr-16 w-[calc(100%+1.5rem)] sm:w-[calc(100%+2rem)] lg:w-[calc(100%+4rem)]">
             {TRAVEL_STATS.map((stat, index) => {
               const isActive = activeTravelIndex === index;
@@ -281,7 +281,7 @@ const App: React.FC = () => {
 
         {/* Reading */}
         {readingData.length > 0 && (
-          <RamsSection title="I just finished reading...">
+          <RamsSection title="I recently read...">
             <div className="flex gap-4 md:gap-16 overflow-x-auto pb-6 no-scrollbar -mr-6 sm:-mr-8 lg:-mr-16 pr-6 sm:pr-8 lg:pr-16 w-[calc(100%+1.5rem)] sm:w-[calc(100%+2rem)] lg:w-[calc(100%+4rem)]">
               {readingData.map((book, index) => {
                 const isActive = activeBookIndex === index;
