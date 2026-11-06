@@ -35,7 +35,7 @@ export const OPENLIBRARY_USERNAME = 'madhu_muthukumar';
 // -------------------------
 
 export const CAREER_HISTORY: CareerItem[] = [
-  { id: 'h0', name: 'SoFi', role: 'Chief Product Officer', year: '2026-Present', icon: ICONS.sofi },
+  { id: 'h0', name: 'SoFi', role: 'CPO', year: '2026-Present', icon: ICONS.sofi },
   { id: 'h1', name: 'Chime', role: 'CPO', year: '2023-2026', icon: ICONS.chime },
   { id: 'h2', name: 'Notion', role: 'CPO', year: '2022-2023', icon: ICONS.notion },
   { id: 'h3', name: 'Robinhood', role: 'Head of Product', year: '2018-2022', icon: ICONS.robinhood },
