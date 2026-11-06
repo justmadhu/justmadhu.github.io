@@ -4,13 +4,14 @@ import { ThinkingItem, Track, Book, TravelStat, CareerItem } from './types';
 // Profile Metadata
 export const PROFILE_INFO = {
   name: "MADHU MUTHUKUMAR",
-  role: "Chief Product Officer at Chime",
+  role: "Chief Product Officer at SoFi",
   location: "New York, NY",
   bio: "I design and build products hundreds of millions of people use and love.",
 };
 
 // Icon paths for career and advisory items
 const ICONS = {
+  sofi: "/assets/icons/sofi.svg",
   chime: "/assets/icons/chime.png",
   notion: "/assets/icons/notion.png",
   acrew: "/assets/icons/acrew.png",
@@ -34,6 +35,7 @@ export const OPENLIBRARY_USERNAME = 'madhu_muthukumar';
 // -------------------------
 
 export const CAREER_HISTORY: CareerItem[] = [
+  { id: 'h0', name: 'SoFi', role: 'Chief Product Officer', year: '2026-Present', icon: ICONS.sofi },
   { id: 'h1', name: 'Chime', role: 'CPO', year: '2023-2026', icon: ICONS.chime },
   { id: 'h2', name: 'Notion', role: 'CPO', year: '2022-2023', icon: ICONS.notion },
   { id: 'h3', name: 'Robinhood', role: 'Head of Product', year: '2018-2022', icon: ICONS.robinhood },
